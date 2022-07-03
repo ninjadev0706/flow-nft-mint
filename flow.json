@@ -1,21 +1,34 @@
 {
 	"emulators": {
-		"default": {
-			"port": 3569,
-			"serviceAccount": "emulator-account"
-		}
+	  "default": {
+		"port": 3569,
+		"serviceAccount": "emulator-account"
+	  }
 	},
-	"contracts": {},
+	"contracts": {
+		"BottomShot": "./contracts/BottomShot.cdc"
+	},
 	"networks": {
-		"emulator": "127.0.0.1:3569",
-		"mainnet": "access.mainnet.nodes.onflow.org:9000",
-		"testnet": "access.devnet.nodes.onflow.org:9000"
+	  "emulator": "127.0.0.1:3569",
+	  "mainnet": "access.mainnet.nodes.onflow.org:9000",
+	  "testnet": "access.devnet.nodes.onflow.org:9000"
 	},
 	"accounts": {
-		"emulator-account": {
-			"address": "f8d6e0586b0a20c7",
-			"key": "0756fdf5e10767d2b98949873996e03e4c5f65548e4316580cc35ae3ea9ed605"
-		}
+	  "emulator-account": {
+		"address": "f8d6e0586b0a20c7",
+		"key": "3314a7fca73b5c091da87027265180a5d85e6930047f2d9bf98cc979d52c5022"
+	  },
+	  "testnet-account": {
+		"address": "0x3cead50385e516a9",
+		"key": "7b47ee3e0bc5acc22f0c36057632cdb59bb8ea75c5b840c16e3f22c19f108ec1"
+	  }
 	},
-	"deployments": {}
-}
+	"deployments": {
+		"testnet": {
+			"testnet-account": [
+				"BottomShot"
+			]
+		}
+	}
+  }
+  
