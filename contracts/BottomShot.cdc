@@ -1,5 +1,5 @@
 // We're importing the contract from the default service account
-import NonFungibleToken from 0xf8d6e0586b0a20c7;
+import NonFungibleToken from 0x631e88ae7f1d7c20;
 
 // Here we tell Cadence that our BottomShot contract implements the interface
 pub contract BottomShot: NonFungibleToken {
